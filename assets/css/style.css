@@ -1,0 +1,414 @@
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:300,400,700');
+
+* {
+    outline: 0;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+.row {
+    margin: 0;
+}
+
+.header {
+    background: #a01c1c;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+}
+
+.heart {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 500px;
+    color: #b51f1f;
+    height: 75vh
+}
+
+.heart > i {
+    -webkit-animation: heart 2s linear infinite;
+    animation: heart 2s linear infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.beat {
+    background: url('../images/beat.png');
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 200px;
+    background-position: left;
+    background-repeat: repeat-x;
+    z-index: 1;
+    -webkit-animation: beat 3s linear infinite;
+    animation: beat 3s linear infinite;
+}
+
+.get {
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 33%;
+    z-index: 3;
+    color: white;
+}
+
+.get h2 {
+    font-family: Tajawal;
+    font-weight: 600;
+    font-size: 55px;
+}
+
+.start {
+    background: 0;
+    border: 1px solid #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.start:hover {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.stick {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px 50px 25px 50px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+
+}
+
+.nav a {
+    color: white;
+    margin-left: 80px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    background: #bb3d3d6e;
+}
+
+.header > button {
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 25px;
+}
+
+section {
+    width: 100%;
+}
+
+.sec-t {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    padding: 50px;
+    padding-top: 30px;
+    font-weight: 600;
+    font-family: Tajawal;
+}
+
+.flap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.flap-card {
+    margin: 30px;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.flap-card:hover {
+    -webkit-box-shadow: 0px 0px 7px 2px #b1b1b1;
+    box-shadow: 0px 0px 7px 2px #b1b1b1;
+}
+
+.flap-body {
+    margin-top: 40px
+}
+
+.flap-card h3 {
+    margin-bottom: 20px;
+}
+
+.flap-i {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 100px;
+    width: 110px;
+    height: 110px;
+    background: #b51f1f;
+    text-align: center;
+    border-radius: 50%;
+    border: 10px solid #f3f3f3;
+}
+
+.flap-i i {
+    margin-top: 25px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+.flap-a {
+    padding: 10px;
+}
+
+.flap-a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+.about {
+    width: 100%;
+    background: #222222;
+    padding: 20px;
+    color: #fff;
+}
+
+.about-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    background: url(../images/about.jpg) no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 30px;
+    border: 10px solid;
+}
+
+.about-text {
+    width: 800px;
+}
+
+.about hr {
+    border-top: 1px solid #fff4f440;
+    border-style: dotted;
+}
+
+.appon {
+    margin: 5% 0% 5% 0%;
+    width: 100%;
+}
+
+.appon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.schedule {
+    background: #007bff;
+    width: 500px;
+    color: white;
+    font-size: 25px;
+    font-family: Tajawal;
+}
+
+.schedule-title {
+    text-align: center;
+    width: 100%;
+    background: #026bdc;
+    padding: 20px;
+}
+
+.schedule-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid;
+    padding: 20px;
+}
+
+.schedule-item:last-child {
+    border: 0;
+}
+
+.schedule-item div {
+    text-align: center;
+    width: 40%;
+}
+
+.schedule-item span {
+    font-weight: 200;
+}
+
+.form {
+    padding: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.get-contact {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    background: #b51f1f;
+    color: white;
+    padding: 40px;
+}
+
+.get-contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0 auto;
+    display: table;
+    border-right: 35px solid transparent;
+    border-left: 35px solid transparent;
+    border-bottom: 18px solid #222222;
+}
+
+footer {
+    background: #222222;
+    color: #f6f6f6;
+    font-family: Tajawal;
+}
+
+footer > .row {
+    padding: 50px;
+}
+
+footer hr {
+    border-color: #007bff;
+    width: 30%;
+    margin: 0;
+}
+
+.footer-title {
+    font-weight: 200;
+    padding: 5px;
+}
+
+.footer-row {
+    padding-top: 10px;
+}
+
+.social {
+    margin: 20px;
+}
+
+@-webkit-keyframes heart {
+    0% {
+        font-size: 500px;
+    }
+    100% {
+        font-size: 700px;
+    }
+}
+
+@keyframes heart {
+    0% {
+        font-size: 600px;
+        width: 600px;
+    }
+    100% {
+        font-size: 630px;
+        width: 630px;
+    }
+}
+
+
+@-webkit-keyframes beat {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes beat {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
